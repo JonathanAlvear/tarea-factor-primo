@@ -1,0 +1,20 @@
+﻿//Autor:Jonathan Alvear
+//Los factores primos de 13195 son 5, 7, 13 y 29.
+//¿Cuál es el mayor factor primo del número 600851475143?
+<script>
+main()
+{
+    var num = 600851475143;
+    var i =function("d");
+
+    for (i = 3; i != num; i += 2)
+    {
+        if (num % i == 0) {
+            num = num / i;
+        }
+    }
+
+    printf ("El resultado es %d", num);
+    return 0;
+}
+</script>
